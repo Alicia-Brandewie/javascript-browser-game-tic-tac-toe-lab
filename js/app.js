@@ -65,8 +65,10 @@ console.log (init)
 
 
 const updateBoard = () => {
-    board.forEach((square) => {
-        squareEls[square] = board[square] 
+    board.forEach((square,index) => {
+       squareEls[index].innerHTML = square;
+        console.log(square)
+        
     });
 }
 
@@ -94,7 +96,7 @@ const render = () => {
 }
 
 init()
-    // step 3.b "Call th einit function when the app loads" = call (used interchangably with "invoke") the function anywhere 
+    // step 3.b "Call the init function when the app loads" = call (used interchangably with "invoke") the function anywhere 
 
 /*----------------------------- Event Listeners -----------------------------*/
 
